@@ -35,13 +35,13 @@ body:
         ...
     validations:
       required: true
-- type: textarea
+  - type: textarea
     id: expected
     attributes:
       label: 期望的结果是什么？
     validations:
       required: true
-- type: textarea
+  - type: textarea
     id: reality
     attributes:
       label: 实际的结果是什么？
