@@ -6,13 +6,11 @@ body:
   - type: markdown
     attributes:
       value: |
-对于使用中遇到的问题，请使用以下资源：
-
-    仔细阅读 使用文档 和 组件文档。
-    提问前确保你在 常见问题 和 更新日志 中搜索过
-    在 StackOverflow (英文) 或是 SegmentFault（中文）搜索和提问
-
-最后，在开 issue 前，可以先搜索一下以往的旧 issue - 你遇到的问题可能已经有人提了，也可能已经在最新版本中被修正。注意：如果你发现一个已经关闭的旧 issue 在最新版本中仍然存在，请不要在旧 issue 下面留言，而应该用下面的表单开一个新的 issue。
+        对于使用中遇到的问题，请使用以下资源：
+        - 仔细阅读[使用文档](https://ant.design/docs/react/introduce-cn)和[组件文档](https://ant.design/components/overview-cn/)。
+        - 提问前确保你在 [GitHub issues](https://github.com/ant-design/ant-design/issues)、[常见问题](https://ant.design/docs/react/faq-cn)和[更新日志](https://ant.design/changelog-cn)中搜索过。
+        - 在 [StackOverflow](https://stackoverflow.com/questions/tagged/antd) (英文) 或是 [SegmentFault](https://segmentfault.com/t/antd)（中文）搜索和提问。
+        最后，在开 issue 前，可以先搜索一下以往的旧 issue - 你遇到的问题可能已经有人提了，也可能已经在最新版本中被修正。注意：如果你发现一个已经关闭的旧 issue 在最新版本中仍然存在，请不要在旧 issue 下面留言，而应该用下面的表单开一个新的 issue。
   - type: input
     id: reproduce
     attributes:
