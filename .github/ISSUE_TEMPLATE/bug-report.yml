@@ -1,46 +1,62 @@
-name: 🇨🇳 报告缺陷（beta）
-description: 使用中文模板报告一个 BUG
+name: Bug Report
+description: File a bug report
 title: "[Bug]: "
-labels: ["bug"]
+labels: ["bug", "triage"]
 assignees:
   - octocat
 body:
   - type: markdown
     attributes:
       value: |
-        非常感谢抽出时间报告 antd 的问题。
+        Thanks for taking the time to fill out this bug report!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
   - type: textarea
     id: what-happened
     attributes:
-      label: 问题描述
-      description: 
-      placeholder: 描述具体的问题
-      value: "我遇到了一个问题..."
-    validations:
-      required: true
-  - type: input
-    id: version
-    attributes:
-      label: 版本
-      description: 你使用的 antd 版本是多少？
-      placeholder: 比如 4.16.3
+      label: What happened?
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+      value: "A bug happened!"
     validations:
       required: true
   - type: dropdown
-    id: 浏览器
+    id: version
     attributes:
-      label: 浏览器
+      label: Version
+      description: What version of our software are you running?
+      options:
+        - 1.0.2 (Default)
+        - 1.0.3 (Edge)
+    validations:
+      required: true
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: What browsers are you seeing the problem on?
       multiple: true
       options:
         - Firefox
         - Chrome
         - Safari
         - Microsoft Edge
-        - Internet Explorer
-  - type: input
-    id: reproduce
+  - type: textarea
+    id: logs
     attributes:
-      label: 重现链接
-      description: 提供最小化的 codesandbox 重现链接或者 GitHub 仓库地址
-    validations:
-      required: true
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. 这将自动格式化为代码，因此无需背板。
+      render: shell
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
