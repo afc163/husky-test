@@ -1,62 +1,77 @@
-name: Bug Report
-description: File a bug report
-title: "[Bug]: "
-labels: ["bug", "triage"]
-assignees:
-  - octocat
+name: 🇨🇳 报告缺陷（beta）
+description: 使用中文模板报告一个 BUG
+title: "[Bug] "
+labels: ["bug"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        非常感谢抽出时间报告 antd 的问题！
   - type: input
-    id: contact
+    id: reproduce
     attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
-    validations:
-      required: false
-  - type: textarea
-    id: what-happened
-    attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      label: 重现链接
+      description: 请提供一个尽可能精简的 codesandbox 或 GitHub 仓库的链接。
+      placeholder: 可以从 https://u.ant.design/codesandbox-repro 新建
     validations:
       required: true
-  - type: dropdown
+  - type: input
     id: version
     attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
+      label: antd 版本
+      description: 你正在使用的 antd 版本是多少？
+      placeholder: 如 4.16.13
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce-steps
+    attributes:
+      label: 重现步骤
+      description: 请提供一个傻瓜式的操作步骤，方便我们无脑重现问题。
+      value: |
+        1. 点击 xxx 按钮
+        2. 等待五秒钟
+        3. 观察 loading 样式
+        ...
+    validations:
+      required: true
+- type: textarea
+    id: expected
+    attributes:
+      label: 期望的结果是什么？
+    validations:
+      required: true
+- type: textarea
+    id: reality
+    attributes:
+      label: 实际的结果是什么？
     validations:
       required: true
   - type: dropdown
     id: browsers
     attributes:
-      label: What browsers are you seeing the problem on?
+      label: 浏览器
+      description: 在哪些浏览器上能重现这个问题？
       multiple: true
       options:
         - Firefox
         - Chrome
         - Safari
-        - Microsoft Edge
-  - type: textarea
-    id: logs
+        - Edge
+        - Internet Explorer
+        - Others
+  - type: input
+    id: browsers-version
     attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. 这将自动格式化为代码，因此无需背板。
-      render: shell
-  - type: checkboxes
-    id: terms
+      label: 浏览器版本
+  - type: dropdown
+    id: browsers
     attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      label: 操作系统
+      description: 使用的操作系统是？
       options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
+        - Windows
+        - MacOS
+        - iOS
+        - Android
+        - Others
