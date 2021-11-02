@@ -1,5 +1,5 @@
 name: 🇨🇳 报告缺陷（beta）
-description: 使用中文模板报告一个 BUG
+description: 使用中文模板报告一个缺陷
 title: "[Bug] "
 labels: ["bug"]
 body:
@@ -27,7 +27,7 @@ body:
     id: version
     attributes:
       label: antd 版本
-      description: 你正在使用的 antd 版本是多少？
+      description: 你正在使用的 antd 版本是多少？（注意不是 package.json 里的版本，而是 node_modules/antd 里实际安装的版本）
       placeholder: 如 4.16.13
     validations:
       required: true
