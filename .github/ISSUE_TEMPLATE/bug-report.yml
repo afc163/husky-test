@@ -36,23 +36,24 @@ body:
     attributes:
       label: 重现步骤
       description: 请提供一个傻瓜式的操作步骤，方便我们无脑重现问题。
-      value: |
-        1. 点击 xxx 按钮
+      placeholder: |
+        1. 点击重现链接里的主按钮
         2. 等待五秒钟
-        3. 观察 loading 样式
-        ...
+        3. 观察按钮的边框
     validations:
       required: true
   - type: textarea
     id: expected
     attributes:
       label: 期望的结果是什么？
+      placeholder: 比如：按钮样式正常，边框一直存在
     validations:
       required: true
   - type: textarea
     id: reality
     attributes:
       label: 实际的结果是什么？
+      placeholder: 比如：按钮样式异常，边框突然丢失
     validations:
       required: true
   - type: dropdown
