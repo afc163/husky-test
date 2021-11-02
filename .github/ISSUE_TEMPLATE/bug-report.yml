@@ -6,8 +6,11 @@ body:
   - type: markdown
     attributes:
       value: |
+        Ant Design 的 issue 列表只接受 Bug 报告或是新功能请求 (Feature Request)。这意味着我们不接受用法问题（How to 类问题）。如果你开的 issue 不符合规定，它将会被立刻关闭。[为什么要这么严格？](https://github.com/ant-design/antd-issue-helper/blob/master/src/locales/zh/introModal.md)
+        
         对于使用中遇到的问题，请使用以下资源：
 
+        - 将问题发到 [GitHub 讨论区](https://github.com/ant-design/ant-design/discussions) 而不是 Issue。
         - 仔细阅读 [使用文档](https://ant.design/docs/react/introduce-cn) 和 [组件文档](https://ant.design/components/overview-cn/)。
         - 提问前确保你在 [常见问题](https://ant.design/docs/react/faq-cn) 和 [更新日志](https://ant.design/changelog-cn) 中搜索过。
         - 在 [StackOverflow](https://stackoverflow.com/questions/tagged/antd) (英文) 或是 [SegmentFault](https://segmentfault.com/t/antd)（中文）搜索和提问。
@@ -17,7 +20,7 @@ body:
     id: reproduce
     attributes:
       label: 重现链接
-      description: 请提供一个尽可能精简的 [codesandbox](https://u.ant.design/codesandbox-repro) 或 GitHub 仓库的链接。
+      description: 请提供一个尽可能精简的 [codesandbox](https://u.ant.design/codesandbox-repro) 或 [GitHub 仓库](https://github.com/ant-design/create-react-app-antd/) 的链接。[什么是最小化重现，为什么这是必需的？](https://github.com/ant-design/antd-issue-helper/blob/master/src/locales/zh/reproModal.md)
     validations:
       required: true
   - type: input
