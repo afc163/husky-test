@@ -65,7 +65,7 @@ body:
     attributes:
       label: 浏览器版本
   - type: dropdown
-    id: browsers
+    id: os
     attributes:
       label: 操作系统
       description: 使用的操作系统是？
